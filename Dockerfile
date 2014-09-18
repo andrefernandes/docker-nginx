@@ -10,7 +10,8 @@ MAINTAINER Andre Fernandes
 RUN yum install nginx -y && \
     yum clean all
 
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf && \
+    echo "include /etc/nginx/sites-enabled/*;" >> /etc/nginx/conf.d/nginx-sites.conf
 
 WORKDIR /opt
 

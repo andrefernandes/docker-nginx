@@ -29,4 +29,9 @@ Show nginx version:
 
     ./runbash.sh nginx -v
     nginx version: nginx/1.6.1
+
+#### Volumes
+
+Several volumes are exposed in order to permit reuse
+in several ways. Feel free to toy around with it.
     
