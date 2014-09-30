@@ -8,7 +8,7 @@ and with bits from "internavenue/centos-nginx"
 
 This is just a plain nginx image meant for reuse.
 It exposes the same volumes as the original official
-nginx image, but is bases on CentOS 7.
+nginx image, but is based on CentOS 7.
 
 ### Useful scripts
 
@@ -17,6 +17,8 @@ nginx image, but is bases on CentOS 7.
 container (fast-food, auto-destroy) or even to just
 open a bash shell to play.
 * **runweb.sh** : runs nginx container as daemon.
+* **quickweb.sh** : you can use it to launch a quick self-service,
+fast-food web server that serves the current path.
 
 #### Some nice tests:
 

@@ -15,8 +15,8 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf && \
 
 WORKDIR /opt
 
-# Define mountable directories.
-VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
+# Define mountable directories. Focus on reusability, felxibility, bla bla bla
+VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx","/usr/share/nginx/html"]
 
 EXPOSE 80 443
 
